@@ -10,24 +10,22 @@ body {
 .container {
   display: flex; /* or inline-flex */
   flex-direction: row;
-   justify-content: center;
-   align-items; stretch;
+  justify-content: center;
+  align-items: stretch;
+  flex: 1 0 auto;
+  flex-wrap: wrap;
 }
 
 
 img {
-  max-width: 100%;
-  display: block;
-  background: linear-gradient(35deg, rgb(100,200,200,0.5),rgb(110,200,200,0.1)) fixed;
+   background: linear-gradient(35deg, rgb(100,200,200,0.5),rgb(110,200,200,0.1)) fixed;
+     display: block;
 
 }
 
 img:hover {
 	transform: scale(1.5) 
 }
-
-
-
 
 h1 {
 	height: 20px;
