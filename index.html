@@ -3,20 +3,31 @@
 @import url('https://fonts.googleapis.com/css?family=Bad+Script');
 
 body {
-	background: linear-gradient(35deg, rgb(100,0,200),rgb(110,0,200,0.1));
+	background: linear-gradient(35deg, rgb(100,0,200,0.5),rgb(110,0,200,0.1)) fixed;
 	font-family: 'Bad Script', cursive;
 }
-	
+
+.container {
+  display: flex; /* or inline-flex */
+  flex-direction: row;
+   justify-content: center;
+   align-items; stretch;
+}
+
+
 img {
   max-width: 100%;
   display: block;
-  height: auto;
-  margin: 0 auto;
+  background: linear-gradient(35deg, rgb(100,200,200,0.5),rgb(110,200,200,0.1)) fixed;
+
 }
 
 img:hover {
 	transform: scale(1.5) 
 }
+
+
+
 
 h1 {
 	height: 20px;
@@ -38,7 +49,11 @@ p {
 <h1>Marte og Nora gifter seg </h1>
 <hr>
 	<p>Her kommer informasjon om bryllupet</p>
-	<img src="20190213_125954.jpg"/ style="height: 500px; opacity: 0.5; border-color: purple; border: 2px;">
-	<img src="logo.png" style="position: fixed; top: 260px; left: 620px; ">
+	<div class="container">
+	<img src="logo.png" >
+	<img src="logo.png" >
+	<img src="logo.png" >
+	<img src="logo.png" >
+	</div>
 <p> Gaveliste finner du <a href="#">her</a></p>
 </body>
