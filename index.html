@@ -9,8 +9,23 @@ body {
 
 h1 {
 	height: 20px;
-	padding: 50px;
-	margin: auto;
+	padding: 20px;
+	margin: 20px;
+	text-align: center;
+}
+
+
+h2 { 
+   position: absolute; 
+   top: 200px; 
+   left: 40px; 
+   width: 100%; 
+}
+
+h3 {
+	height: 20px;
+	padding: 20px;
+	margin: 20px;
 	text-align: center;
 }
 
@@ -24,18 +39,24 @@ p {
 
 header, footer {
     display: flex;
+	border-bottom: 20px solid transparent;
     flex-direction: row;
 }
 
 img {
    background: linear-gradient(35deg, rgb(100,200,200,0.5),rgb(110,200,200,0.1)) fixed;
-     display: block;
-
+   display: block;
+   width: 200px;
+   height: 300px;
+   object-fit:cover;
+   opacity: 0.3;
 }
 
 img:hover {
 	transform: scale(1.5) 
 }
+
+
 
 .container {
   display: flex; /* or inline-flex */
@@ -45,42 +66,88 @@ img:hover {
   align-items: stretch;
   flex: 1 0 auto;
   flex-wrap: wrap;
+  min-height: 40vw;
 }
 
 .image { 
    position: relative; 
  }
 
-h2 { 
-   position: absolute; 
-   top: 200px; 
-   left: 40px; 
-   width: 100%; 
+
+#program {
+	display: grid;
+	padding: 20px;
 }
+
+#praktisk {
+	display: grid;
+	padding: 20px;
+}
+
+#onsker {
+	display: grid;
+	padding: 20px;
+}
+
+
+#hashtag{
+	display: grid;
+	padding: 20px;
+}
+
+#logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+	width: 400px;
+opacity: 1;
+	background: transparent;
+	filter: invert(100%);
+}
+
 
 
 
 </style>
 
 <body>
-<div class="header"><h1>Marte og Nora gifter seg </h1>
-</div>
+
+
+<img src="logo.png" alt="" id="logo"/>
+
+
 <div class="container">
 <div class="image">
-      <img src="logo.png" alt="" />
+      <a href="#program"><img src="pic1.jpg" alt="" /></a>
       <h2>Program</h2>
 </div>
 <div class="image">
-      <img src="logo.png" alt="" />
+       <a href="#praktisk"><img src="pic3.jpg" alt="" /></a>
       <h2>Praktisk info</h2>
 </div>
 <div class="image">
-      <img src="logo.png" alt="" />
+      <a href="#onsker"><img src="pic5.jpg" alt="" /></a>
       <h2>Ønskeliste</h2>
 </div>
 <div class="image">
-      <img src="logo.png" alt="" />
-      <h2>Kontaktinfo</h2>
+       <a href="#hashtag"><img src="pic2.jpg" alt="" /></a>
+      <h2>#2gjø</h2>
 </div>	</div>
 
+
+<div class="container">
+<div id="program">Her kommer program</div>
+</div>
+
+<div class="container">
+<div id="praktisk">Her kommer praktisk info</div>
+</div>
+
+<div class="container">
+<div id="onsker">Her kommer ønskeliste</div>
+</div>
+
+<div class="container">
+<div id="hashtag">Her kommer feed</div>
+</div>
 </body>
