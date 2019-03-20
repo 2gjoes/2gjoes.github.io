@@ -3,28 +3,8 @@
 @import url('https://fonts.googleapis.com/css?family=Bad+Script');
 
 body {
-	background: linear-gradient(35deg, rgb(100,0,200,0.5),rgb(110,0,200,0.1)) fixed;
+	background: linear-gradient(35deg, rgb(100,0,200,0.3),rgb(110,0,200,0.03)) fixed;
 	font-family: 'Bad Script', cursive;
-}
-
-.container {
-  display: flex; /* or inline-flex */
-  flex-direction: row;
-  justify-content: center;
-  align-items: stretch;
-  flex: 1 0 auto;
-  flex-wrap: wrap;
-}
-
-
-img {
-   background: linear-gradient(35deg, rgb(100,200,200,0.5),rgb(110,200,200,0.1)) fixed;
-     display: block;
-
-}
-
-img:hover {
-	transform: scale(1.5) 
 }
 
 h1 {
@@ -41,17 +21,66 @@ p {
 	padding: 15px;
 }
 
+
+header, footer {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+   background: linear-gradient(35deg, rgb(100,200,200,0.5),rgb(110,200,200,0.1)) fixed;
+     display: block;
+
+}
+
+img:hover {
+	transform: scale(1.5) 
+}
+
+.container {
+  display: flex; /* or inline-flex */
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  align-items: stretch;
+  flex: 1 0 auto;
+  flex-wrap: wrap;
+}
+
+.image { 
+   position: relative; 
+ }
+
+h2 { 
+   position: absolute; 
+   top: 200px; 
+   left: 40px; 
+   width: 100%; 
+}
+
+
+
 </style>
 
 <body>
-<h1>Marte og Nora gifter seg </h1>
-<hr>
-	<p>Her kommer informasjon om bryllupet</p>
-	<div class="container">
-	<img src="logo.png" >
-	<img src="logo.png" >
-	<img src="logo.png" >
-	<img src="logo.png" >
-	</div>
-<p> Gaveliste finner du <a href="#">her</a></p>
+<div class="header"><h1>Marte og Nora gifter seg </h1>
+</div>
+<div class="container">
+<div class="image">
+      <img src="logo.png" alt="" />
+      <h2>Program</h2>
+</div>
+<div class="image">
+      <img src="logo.png" alt="" />
+      <h2>Praktisk info</h2>
+</div>
+<div class="image">
+      <img src="logo.png" alt="" />
+      <h2>Ønskeliste</h2>
+</div>
+<div class="image">
+      <img src="logo.png" alt="" />
+      <h2>Kontaktinfo</h2>
+</div>	</div>
+
 </body>
