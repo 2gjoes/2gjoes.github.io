@@ -7,6 +7,86 @@ body {
 	font-family: 'Bad Script', cursive;
 }
 
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+ul {
+  width: 650px;
+  margin: 40px auto;
+  list-style: none;
+}
+
+li {
+  display: flex;
+}
+
+li:last-child {
+  border: 0;
+}
+
+li p {
+  display: block;
+  padding: 20px;
+  line-height: 1.4;
+}
+
+li p:nth-child(1) {
+  position: relative;
+  padding-right: 25px;
+  font-size: 14px;
+  line-height: 2.5;
+  color: rgb(100,0,200,1);
+}
+
+li p:nth-child(1):after {
+  content: '';
+  position: absolute;
+  top: 28px;
+  right: -12px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 5px solid #999;
+  border-radius: 50%;
+  background: rgb(100,0,200,0.8);
+}
+
+li:first-child p:nth-child(1):after {
+  background: rgb(100,0,200,0.8);
+}
+
+li p:nth-child(2) {
+  flex: 1;
+  font-size: 24px;
+  border-left: 5px solid rgb(100,0,200,0.2);
+}
+
+li p span {
+  display: block;
+  margin: 5px 0 0;
+  font-size: 12px;
+  font-style: italic;
+  color: rgb(100,0,200,1);
+}
+
+
+
+
+
+
 h1 {
 	height: 20px;
 	padding: 20px;
@@ -46,8 +126,8 @@ header, footer {
 img {
    background: linear-gradient(35deg, rgb(100,200,200,0.5),rgb(110,200,200,0.1)) fixed;
    display: block;
-   width: 200px;
-   height: 300px;
+   width: 300px;
+   height: 450px;
    object-fit:cover;
    opacity: 0.3;
 }
@@ -67,6 +147,9 @@ img:hover {
   flex: 1 0 auto;
   flex-wrap: wrap;
   min-height: 40vw;
+    margin: 0 auto;
+	    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .image { 
@@ -75,32 +158,48 @@ img:hover {
 
 
 #program {
-	display: grid;
 	padding: 20px;
+	padding: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
 }
 
 #praktisk {
-	display: grid;
-	padding: 20px;
+padding: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+	width: 800px;
+
 }
 
 #onsker {
-	display: grid;
 	padding: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
 }
 
 
 #hashtag{
-	display: grid;
 	padding: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
 }
 
 #logo{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height:300px;
+	width:200px;
 	width: 400px;
-opacity: 1;
+	opacity: 1;
 	background: transparent;
 	filter: invert(100%);
 }
@@ -119,11 +218,12 @@ opacity: 1;
 <div class="container">
 <div class="image">
       <a href="#program"><img src="pic1.jpg" alt="" /></a>
-      <h2>Program</h2>
+	  
+      <h2 style="top:20px;">Program</h2>
 </div>
 <div class="image">
        <a href="#praktisk"><img src="pic3.jpg" alt="" /></a>
-      <h2>Praktisk info</h2>
+      <h2 style="top:390px;">Praktisk info</h2>
 </div>
 <div class="image">
       <a href="#onsker"><img src="pic5.jpg" alt="" /></a>
@@ -131,23 +231,96 @@ opacity: 1;
 </div>
 <div class="image">
        <a href="#hashtag"><img src="pic2.jpg" alt="" /></a>
-      <h2>#2gjø</h2>
+      <h2 style="top:20px;">#2gjø</h2>
 </div>	</div>
 
 
-<div class="container">
-<div id="program">Her kommer program</div>
+
+<div id="program">
+<h1 style="padding: 65px;">         Program 20. juli</h1>
+<ul>
+  <li>
+    <p style="width: 200px; padding:40px; text-align: right;">13:00-13:45</p>
+    <p>
+     Vielse
+      <span>
+        Mer informasjon
+      </span>
+    </p>
+  </li>
+  <li>
+    <p style="width: 200px; padding:40px; text-align: right;">13:50-14:30</p>
+    <p>
+      Felles fotografering
+      <span>
+        Mer info
+      </span>
+    </p>
+  </li>
+  <li>
+    <p style="width: 200px; padding:40px; text-align: right;">14:30-14:45 </p>
+    <p>
+      Transport til Rubbhallen
+      <span>
+        Ekstra info
+      </span>
+    </p>
+  </li>
+  <li>
+    <p style="width: 200px; padding:40px; text-align: right;">14:45-16:00</p>
+    <p>
+      Kunstpause og mingling
+      <span>
+        Mer info
+      </span>
+    </p>
+  </li>
+  <li>
+    <p style="width: 200px; padding:40px; text-align: right;">16:00-20:00</p>
+    <p>Middag
+      <span>
+        Mer info
+      </span>
+    </p>
+  </li>
+    <li>
+    <p style="width: 200px; padding:40px; text-align: right;">20:00-00:00</p>
+    <p>Kaffe og kalas
+      <span>
+        Mer info
+      </span>
+    </p>
+  </li>
+    <li>
+    <p style="width: 200px; padding:40px; text-align: right;">00:00-00:30</p>
+    <p>Nattmat
+      <span>
+        Mer info
+      </span>
+    </p>
+  </li>
+      <li>
+    <p style="width: 200px; padding:40px; text-align: right;">00:30-??</p>
+    <p>Fest
+      <span>
+        Mer info
+      </span>
+    </p>
+  </li>
+  
+  
+</ul>
 </div>
 
-<div class="container">
-<div id="praktisk">Her kommer praktisk info</div>
+
+<div id="praktisk"><h1 style="padding: 65px;">         Praktisk informasjon</h1></div>
+
+<div id="onsker"><h1 style="padding: 65px;">         Ønskeliste</h1>
+<p>Vi ønsker oss </p>
 </div>
 
-<div class="container">
-<div id="onsker">Her kommer ønskeliste</div>
-</div>
 
-<div class="container">
-<div id="hashtag">Her kommer feed</div>
-</div>
+<div id="hashtag"><h1 style="padding: 65px;">         #2gjø</h1></div>
+
+<iframe allowfullscreen="" id="wallsio-iframe" src="https://walls.io/b48b8?nobackground=1&amp;show_header=0" style="border:0;height:800px;width:100%"></iframe>
 </body>
