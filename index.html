@@ -1,18 +1,14 @@
 <!DOCTYPE HTML>
+<head>
 <style>
-@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+<!--@import url('https://fonts.googleapis.com/css?family=Bad+Script');@import url('https://fonts.googleapis.com/css?family=Chakra+Petch|Open+Sans');-->
+@import url('https://fonts.googleapis.com/css?family=Poppins|Roboto+Condensed');
 
 body {
 	background: linear-gradient(35deg, rgb(100,0,200,0.3),rgb(110,0,200,0.03)) fixed;
-	font-family: 'Bad Script', cursive;
+	font-family: 'Poppins', sans-serif;
+
 }
-
-
-
-
-
-
-
 
 * {
   margin: 0;
@@ -77,7 +73,7 @@ li p:nth-child(2) {
 li p span {
   display: block;
   margin: 5px 0 0;
-  font-size: 168x;
+  font-size: 20px;
   font-style: italic;
   color: rgb(100,0,200,1);
 }
@@ -85,10 +81,8 @@ li p span {
 
 
 
-
-
 h1 {
-	height: 20px;
+	height: 30px;
 	padding: 20px;
 	margin: 20px;
 	text-align: center;
@@ -97,20 +91,28 @@ h1 {
 
 h2 { 
    position: absolute; 
+   height: 25px
    top: 200px; 
    left: 40px; 
    width: 100%; 
 }
 
 h3 {
-	height: 20px;
+	height: 30px;
 	padding: 20px;
 	margin: 20px;
 	text-align: center;
 }
 
 h4 {
-	height: 20px;
+	height: 23px;
+	padding: 20px;
+	margin: 20px;
+	text-align: center;
+}
+
+h5 {
+	height: 22px;
 	padding: 20px;
 	margin: 20px;
 	text-align: center;
@@ -118,7 +120,7 @@ h4 {
 
 
 p {
-	font-size: 25px;
+	font-size: 20px;
 	margin: 0 auto;
 	text-align: center;
 	padding: 15px;
@@ -155,10 +157,11 @@ img:hover {
   flex: 1 0 auto;
   flex-wrap: wrap;
   min-height: 40vw;
-    margin: 0 auto;
-	    padding-left: 10px;
-    padding-right: 10px;
+  margin: 0 auto;
+	adding-left: 10px;
+   padding-right: 10px;
 }
+
 
 .image { 
    position: relative; 
@@ -213,6 +216,28 @@ padding: 20px;
 	box-shadow: 0 0 0px 0px rgba(100, 0, 200,0, 0s);
 }
 
+
+#jonas{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+	opacity: 1;
+	background: transparent;
+	box-shadow: 0 0 0px 0px rgba(100, 0, 200,0.5, 0s);
+}
+
+.jonasclass{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+	opacity: 1;
+	background: transparent;
+	box-shadow: 0 0 0px 0px rgba(100, 0, 200,0.5, 0s);
+}
+
+
 #space{
 display: block;
 height:1000px;
@@ -237,11 +262,30 @@ height:1000px;
 width:500px;
 }
 
+.smallspace{
+display: block;
+height:100px;
+width:500px;
+
+}
+
+#middagspunkt{}
+
+
+#fixedbutton {
+    position: fixed;
+	width: 40px;
+	height: auto;
+    bottom: 10px;
+    right: 10px; 
+}
 
 </style>
-
+<meta name="Marte og Nora blir kone og kone" content="Bryllaup 200719">
+</head>
 <body>
 
+<a href="#logo"><img src="back.png" id="fixedbutton"></a>
 
 <img src="logo.png" alt="" id="logo"/>
 
@@ -258,13 +302,13 @@ width:500px;
 </div>
 <div class="image">
       <a href="#onsker"><img src="pic5.jpg" alt="" /></a>
-      <h2>Ynskjeliste</h2>
+      <h2 style="top:200px;">Ynskjeliste</h2>
 </div>
 <div class="image">
        <a href="#hashtag"><img src="pic2.jpg" alt="" /></a>
       <h2 style="top:20px;">#2gjø</h2>
 </div>	</div>
-<p> Vi ynskjer velkomen til bryllaup 20. juli 2019. Denne siden er opprettet for å samle informasjon for gjester.</p>
+<p> me ynskjer velkomen til bryllaup 20. juli 2019.</p>
 <div id="space"></div>
 
 
@@ -285,7 +329,7 @@ width:500px;
     <p>
       Felles fotografering
       <span>
-        Mer info
+        Om vergudane er med oss så får me kanskje tatt eit flott fellesbilete utanfor kyrkja.
       </span>
     </p>
   </li>
@@ -294,16 +338,17 @@ width:500px;
     <p>
       Transport til Rubbhallen
       <span>
-        Ekstra info
+        Det er ein liten kjøyretur frå kyrkja til Rubbestadneset. 
       </span>
     </p>
   </li>
   <li>
     <p style="width: 200px; padding:40px; text-align: right;">14:45-16:00</p>
     <p>
-      Kunstpause og mingling
+      Velkomstdrink og snacks
       <span>
-        Mer info
+        Lokalet vil opne etter vigsla for dei som kjem direkte frå kyrkja. Det blir servert velkomstdrink og enkel snacks. Brudeparet
+		skal fotograferast etter kyrkja, og kjem til lokalet litt før middag.
       </span>
     </p>
   </li>
@@ -311,15 +356,15 @@ width:500px;
     <p style="width: 200px; padding:40px; text-align: right;">16:00-20:00</p>
     <p>Middag
       <span>
-        Mer info
+        Lasse frå Bømlo hotell står for forrett og hovedrett. Desserten ble heimelaga. <a href="#middagspunkt">Meir detaljer finn du her.</a>
       </span>
     </p>
   </li>
     <li>
     <p style="width: 200px; padding:40px; text-align: right;">20:00-00:00</p>
-    <p>Kaffe og kalas
+    <p>Kaffe
       <span>
-        Mer info
+       Om alt går etter planen er me klar for kaffe og kaker omtrent klokka 20.
       </span>
     </p>
   </li>
@@ -327,7 +372,7 @@ width:500px;
     <p style="width: 200px; padding:40px; text-align: right;">00:00-00:30</p>
     <p>Nattmat
       <span>
-        Mer info
+        Alt skal ligge til rette for ein lang kveld. Det blir hotdog for de som vil ha påfyll.
       </span>
     </p>
   </li>
@@ -335,7 +380,7 @@ width:500px;
     <p style="width: 200px; padding:40px; text-align: right;">00:30-??</p>
     <p>Fest
       <span>
-        Mer info
+       me håper folk dansar og har det kjekt til det er tomt for både kaker, snacks og drikke. Bømlo hotell ligger bare ein spasertur unna. 
       </span>
     </p>
   </li>
@@ -350,22 +395,80 @@ width:500px;
 
 <div id="praktisk"><h1 style="padding: 65px;">         Praktisk informasjon</h1></div>
 
+<div class="container">
+<div class="jonasclass">
+<h4>Overnatting</h4>
+<p> Om me gjør ein felles reservasjon kan ein få dobbeltrom på Bømlo hotell for 990 kronar per natt. Kokken Lasse har lovet sein frokost for bryllaupsgjestane søndagen.
+</p>
+</div>
+
+
+<div class="jonasclass">
 <h4>Transport</h4>
+<p>Mereknar med at de fleste anten kjøyrer eller tek båt. Til de av dykk som tek båt og ikkje får ordna med transport til/frå kyrkja gi beskjed til oss, så skal me ordne dette. 
+</p>
+</div>
+
+<div class="jonasclass">
 <h4>Parkering</h4>
-<h4>Fotografering</h4>
+<!--<h5>Kyrkja</h5>-->
+<p>Ved kyrkja er det gode parkeringsmoglegheiter. Heilt inne på plassen er reservert handikappa, men under 50m frå er det eit parkeringshus.</p>
+<!--<h5>Rubbhallen</h5>-->
+<p>Ved Rubbhallen er det stor parkeringsplass rett ved sida.</p>
+ 
+</div>
+
+<div class="jonasclass"><h4>Fotografering</h4>
+<p>Mekjem til å ha fotograf med oss frå vigsla og til ca. etter middagen. me vil gjerne ta et fellesbilde utanfor kyrkja.</p>
+</div>
+
+<div class="jonasclass" id="middagspunkt">
 <h4>Middag</h4>
-<h4>Alkohol og servering</h4>
+<p>Det vil bli servert ein tre retters middag. Til forret vert det salat med ristet kamskjell, vinagrette og syltet rødløk. Til hovudrett vert det nøttesteik
+servert med soppsaus, braiserte rosenkål og rotmos med eplebiter. Til dessert vert det heimelaga sjokolademousse med bringebær. </p>
+</div>
+
+<div class="jonasclass">
+<h4>Allergiar</h4>
+<p>Dersom det er nokon som har allergier vil me gjerne at dykk sender ein sms i god tid slik at dei som skal lage middagen kan få beskjed. Også i forhold til kakerbordet. </p>
+</div>
+
+<div class="jonasclass"><h4>Alkohol og servering</h4>
+<p>Meserverer mussersnde vin til velkomstdrink, men har sjølvsagt også eit alkoholfritt alternativ. Til maten har me tenkt at det passar best med
+musserende vin til forrett og raudvin til hovudrett. Men me vil ikkje tvinge folk til å drikke noko dei ikkje er glad i,
+så det vil vera fri tilgang på øl, brus, vatn, raudvin og musserande heile kvelden. Det ryktes også at foreldra til Marte, Svein Ernst Gjøsæter og Linda Økland Gjøsæter
+stiller med likør. me håper at alle finn noko dei kan nyte, hvis ikkje er det fritt fram å
+ta med seg noko ekstra.</p>
+</div>
+
+<div id="jonas">
 <h4>Visevert</h4>
-<h4>Musikk</h4>
+<p>Jonas Neset Gjøen, lillebroren til Nora, har påtatt seg å være visevert for kvelden. Han kan kontaktast på mobil 467 74 884. Han vil gjerne 
+at du melder frå i god tid før bryllaupet om du vil halde tale eller andre innslag. me ynskjer at talane varer i høgst fem minuttar så 
+middagen ikkje vert alt for lang. </p><img src="jonas.jpeg" style="margin:auto; width: 200px; opacity:1; height: auto;">
+</div>
 
 
+<div class="jonasclass"><h4>Musikk</h4>
+<p>Nora sin far kjem til å spele musikk i bryllaupet. Om du vil bidra med noe musikalsk kan du gjerne kontakte han for å samkøyre. Mobilnummeret er 906 16 076.</p><img src="erlend.jpg" style="margin:auto; width: 200px; opacity:1; height: auto;">
+</div>
+
+
+<div class="jonasclass"><h4>Gåver</h4>
+<p>Om du kjem med gåver blir me ikkje fornærma om du gløymer innpakninga. Du sparar jo tross alt miljøet.</p>
+</div>
+
+
+
+
+</div>
 
 <div id="space3"></div>
 
 
 <div id="onsker"><h1 style="padding: 65px;">         Ynskjeliste</h1>
-<p>Vi har ei ynskjeliste <a href="https://www.gavelisten.no/list/WZF9F4R/guest">her</a>. Det er ikkje noko spesiell rekkjefylgje, sjølv om 
-må vedgå at vi draumar om ei bryllupsreise.</p>
+<p>Mehar ei ynskjeliste <a href="https://www.gavelisten.no/list/WZF9F4R/guest">her</a>. Det er ikkje noko spesiell rekkjefylgje, sjølv om 
+må vedgå at me draumar om ei bryllaupsreise.</p>
 </div>
 
 <div id="space4"></div>
