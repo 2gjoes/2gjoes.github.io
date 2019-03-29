@@ -97,6 +97,7 @@ h2 {
    width: 100%; 
 }
 
+
 h3 {
 	height: 30px;
 	padding: 20px;
@@ -281,7 +282,47 @@ width:500px;
 	background: transparent;
 }
 
+
+
 </style>
+
+
+
+<!-- Display the countdown timer in an element -->
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("July 20, 2019 13:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "dagar, " + hours + "timar, "
+  + minutes + "minuttar, og " + seconds + "sekund igjen til vigsla";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+
+
 <meta name="Marte og Nora blir kone og kone" content="Bryllaup 200719">
 </head>
 <body>
@@ -290,6 +331,7 @@ width:500px;
 
 <img src="logo.png" alt="" id="logo"/>
 
+<p id="demo" style="font-size:30x;"></p>
 
 <div class="container">
 <div class="image">
@@ -307,7 +349,7 @@ width:500px;
 </div>
 <div class="image">
        <a href="#hashtag"><img src="pic2.jpg" alt="" /></a>
-      <h2 style="top:20px;">#2gjø</h2>
+      <h2 style="top:20px;">Takk!</h2>
 </div>	</div>
 <p> Me ynskjer velkomen til bryllaup 20. juli 2019.</p>
 <div id="space"></div>
@@ -330,7 +372,7 @@ width:500px;
     <p>
       Felles fotografering
       <span>
-        Om vêrgudane er med oss så får me kanskje tatt eit flott fellesbilete utanfor kyrkja.
+        Om vêrgudane er med oss får me kanskje tatt eit flott fellesbilete utanfor kyrkja.
       </span>
     </p>
   </li>
@@ -456,12 +498,6 @@ Me ynskjer at talane varer i høgst fem minuttar så middagen ikkje drar ut for 
 <!--<img src="erlend.jpg" style="margin:auto; width: 200px; opacity:1; height: auto;">-->
 </div>
 
-
-<div class="jonasclass"><h4>Gåver</h4>
-<p>Dersom du ynskjer å gi oss ei gåve blir me ikkje fornærma om du gløymer innpakninga, så sparar me både tid og miljø. Du finn forresten ynskjeliste <a href="#onsker">her</a></p>
-</div>
-
-
 <div class="jonasclass"><h4>Antrekk</h4>
 <p>Mørk dress/smoking.<br><br>
 Me ynskjer at du tar på det du har lyst til og føler deg vel i, så lenge det ikkje er kvit kjole.</p>
@@ -479,16 +515,31 @@ Me ynskjer at du tar på det du har lyst til og føler deg vel i, så lenge det 
 <div id="onsker"><h1 style="padding: 65px;">         Ynskjeliste</h1>
 
 <p>Me har ei ynskjeliste <a href="https://www.gavelisten.no/list/WZF9F4R/guest">her</a>. Det er ikkje noko spesiell rekkjefylgje, sjølv om 
-må vedgå at me draumar om ei bryllaupsreise.</p>
+må vedgå at me draumar om ei bryllaupsreise. Dersom du likevel ynskjer å gi oss ei fysisk gåve blir me ikkje fornærma om du gløymer innpakninga. Då sparar me både tid og miljø. </p>
 
 <div id="space4"></div>
 
 
-<div id="hashtag"><h1 style="padding: 65px;">         #2gjø</h1></div>
+<div id="hashtag"><h1 style="padding: 65px;">         Takk!</h1>
 
-<iframe allowfullscreen="" id="wallsio-iframe" src="https://walls.io/b48b8?nobackground=1&amp;show_header=0" style="border:0;height:2000px;width:100%"></iframe>
+<p>Det er mykje som skal på plass til eit bryllaup. Vi er veldig takknemlege for at vi har fått hjelp til både det ene og det andre. Blant anna vil vi takke</p>
+<ul>
+<li>Ståle som er sjåfør</li>
+<li>Jonas som er toastmaster</li>
+<li>Erlend for god livemusikk</li>
+<li>Linda og Svein Ernst som byr på konjakk og likør</li>
+<li>Mariann og Helene som lagar bryllaupskake</li>
+<li>Lene som er gåvesjef</li>
+<li>Øyvind som er sjenkemeister</li>
+<li>Våre forlovere; Lovise for Marte, og Erle og Pernille for Nora</li>
+<li>Tante Monica og onkel Jesper for lån av rorbu</li>
+<li>Sandvikenspelare som serverer maten</li>
+<li>Og alle andre som også bidrar med stort og smått</li>
 
-<img src="logo.png" alt="" id="logo"/>
+
+<div id="space4"></div>
+
+<a href="#logo"><img src="logo.png" alt="" id="logo"/></a>
 <div id="footer"/>
 <p><strong>Kontaktinformasjon:</strong></p>
 <p>Marte når du på mobil 41621978 </p>
