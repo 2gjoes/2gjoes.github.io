@@ -42,7 +42,7 @@ li p {
 li p:nth-child(1) {
   position: relative;
   padding-right: 25px;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 2.5;
   color: rgb(100,0,200,1);
 }
@@ -73,7 +73,7 @@ li p:nth-child(2) {
 li p span {
   display: block;
   margin: 5px 0 0;
-  font-size: 17px;
+  font-size: 16px;
   font-style: italic;
   color: rgb(100,0,200,1);
 }
@@ -82,7 +82,7 @@ li p span {
 
 
 h1 {
-	height: 30px;
+	height:40px;
 	padding: 20px;
 	margin: 20px;
 	text-align: center;
@@ -91,7 +91,7 @@ h1 {
 
 h2 { 
    position: absolute; 
-   height: 25px
+   height: 35px
    top: 200px; 
    left: 40px; 
    width: 100%; 
@@ -106,7 +106,8 @@ h3 {
 }
 
 h4 {
-	height: 23px;
+	font-size: 25px;
+	height: 25px;
 	padding: 20px;
 	margin: 20px;
 	text-align: center;
@@ -121,7 +122,7 @@ h5 {
 
 
 p {
-	font-size: 20px;
+	font-size: 18px;
 	margin: 0 auto;
 	text-align: center;
 	padding: 15px;
@@ -154,8 +155,8 @@ img:hover {
   flex-direction: row;
   position: relative;
   justify-content: center;
-  align-items: stretch;
-  flex: 1 0 auto;
+  \\align-items: stretch;
+  \\flex: 1 0 auto;
   flex-wrap: wrap;
   min-height: 40vw;
   margin: 0 auto;
@@ -229,13 +230,20 @@ padding: 20px;
 }
 
 .jonasclass{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 13px;
 	width: 400px;
+	height: auto;
 	opacity: 1;
-	background: transparent;
-	box-shadow: 0 0 0px 0px rgba(100, 0, 200,0.5, 0s);
+	background: rgba(100,0,200,0.1);
+	\\border: 2px solid rgba(100,0,200,0.);
+	border-radius: 15px;
+	box-shadow: 3px 3px 4px 4px rgba(100,0,150,0.2);	
 }
 
 
@@ -280,6 +288,31 @@ width:500px;
     bottom: 10px;
     right: 10px; 
 	background: transparent;
+}
+
+
+
+.styled {
+	display:inline-block;
+    line-height: 3;
+    padding: 0 8px;
+	margin: 10px;
+    font-size: 1.1rem;
+    text-align: center;
+    color: black;
+    border-radius: 12px;
+    background-color: rgba(100, 0, 200, 0.3);
+  	width: auto;
+	font-family: 'Poppins', sans-serif;
+
+}
+
+.styledcontainer{
+    text-align: center;
+}
+
+.styled:hover {
+    background-color: rgba(100, 0, 100, 0.4);
 }
 
 
@@ -334,29 +367,42 @@ var x = setInterval(function() {
 <p id="demo" style="font-size:30x;"></p>
 
 <div class="container">
-<div class="image">
-      <a href="#program"><img src="pic1.jpg" alt="" /></a>
-	  
+<div class="image" >
+      <a href="#program"><img style="border-radius: 8%;  margin: 20px;" src="pic1.jpg" alt="" /></a>
       <h2 style="top:20px;">Program</h2>
 </div>
 <div class="image">
-       <a href="#praktisk"><img src="pic3.jpg" alt="" /></a>
+       <a href="#praktisk"><img style="border-radius: 8%;  margin: 20px;" src="pic3.jpg" alt="" /></a>
       <h2 style="top:90px; left:200px;">Praktisk info</h2>
 </div>
 <div class="image">
-      <a href="#onsker"><img src="pic5.jpg" alt="" /></a>
+      <a href="#onsker"><img style="border-radius: 8%;  margin: 20px;" src="pic5.jpg" alt="" /></a>
       <h2 style="top:200px;">Ynskjeliste</h2>
 </div>
 <div class="image">
-       <a href="#hashtag"><img src="pic2.jpg" alt="" /></a>
+       <a href="#hashtag"><img style="border-radius: 8%; margin: 20px;" src="pic2.jpg" alt="" /></a>
       <h2 style="top:20px;">Takk!</h2>
 </div>	</div>
 <p> Me ynskjer velkomen til bryllaup 20. juli 2019.</p>
+
+<div class="styledcontainer">
+<a href="#logo"><input class="favorite styled"
+       type="button"
+                           value="&ltrif; Heim"></a>
+<a href="#program"><input class="favorite styled"
+       type="button"
+                           value="Program 	&rtrif;"></a>
+</div>
 <div id="space"></div>
+
+
 
 
 <div id="program">
 <h1 style="padding: 65px;">         Program 20. juli</h1>
+<div style="background: rgba(100,0,200,0.1);
+		border-radius: 15px;
+	box-shadow: 3px 3px 4px 4px rgba(100,0,150,0.2); margin-bottom:20px;">
 <ul>
   <li>
     <p style="width: 200px; padding:40px; text-align: right;">13:00-13:45</p>
@@ -372,7 +418,7 @@ var x = setInterval(function() {
     <p>
       Felles fotografering
       <span>
-       Etter vigsla vil me ha felles fotografering på kyrkjetrappa. Me ynskjer også å få tatt eit fellesbilete av alle bryllaupsgjestane utanfor kyrkja.
+       Etter vigsla vil me ha felles fotografering på kyrkjetrappa. Me ynskjer også å ta eit fellesbilete av alle bryllaupsgjestane utanfor kyrkja.
       </span>
     </p>
   </li>
@@ -399,7 +445,7 @@ var x = setInterval(function() {
     <p style="width: 200px; padding:40px; text-align: right;">16:00-20:30</p>
     <p>Middag
       <span>
-        Lasse frå Bømlo hotell står for forrett og hovudrett. Desserten ble heimelaga. <a href="#middagspunkt">Meir detaljer finn du her.</a>
+        Lasse frå Bømlo hotell står for forrett og hovudrett. Desserten er heimelaga. <a href="#middagspunkt">Detaljer finn du her.</a>
       </span>
     </p>
   </li>
@@ -423,7 +469,7 @@ var x = setInterval(function() {
     <p style="width: 200px; padding:40px; text-align: right;">00:30-??</p>
     <p>Fest
       <span>
-       Me håper folk dansar og har det kjekt til det er tomt for både kaker, snacks og drikke. Bømlo hotell ligg berre ein spasertur unna. 
+       Me vonar folk dansar og har det kjekt til det er tomt for både kaker, snacks og drikke. Bømlo hotell ligg berre ein spasertur unna. 
       </span>
     </p>
   </li>
@@ -431,7 +477,15 @@ var x = setInterval(function() {
   
 </ul>
 </div>
-
+</div>
+<div class="styledcontainer">
+<a href="#logo"><input class="favorite styled"
+       type="button"
+                           value="&ltrif; Heim"></a>
+<a href="#praktisk"><input class="favorite styled"
+       type="button"
+                           value="Praktisk 	&rtrif;"></a>
+</div>
 <div id="space2"></div>
 
 
@@ -483,13 +537,13 @@ breserte rosenkål og rotmos med eplebitar. Til dessert vert det heimelaga sjoko
 
 <div class="jonasclass"><h4>Alkohol og servering</h4>
 <p>Me serverer musserande vin til velkomstdrink, men har sjølvsagt også eit alkoholfritt alternativ. Til maten har me tenkt at det passar best med musserande vin til forrett og raudvin til hovudrett.
- Men me vil ikkje tvinge folk til å drikke noko dei ikkje liker, så det vil vera fri tilgang på øl, brus, raudvin og musserande heile kvelden.
+ Men me vil ikkje tvinge folk til å drikke noko dei ikkje liker, så det vil vera fri tilgang på øl, brus, raudvin og musserande heile kvelden, eller til det går tomt.
  Foreldra til Marte, Svein og Linda, stiller med likør og konjakk til kaffien. 
-<br><br>Me håper at alle finn noko dei likar, om ikkje er det fritt fram å ta med seg noko anna.</p>
+<br><br>Me vonar at alle finn noko dei likar, om ikkje er det fritt fram å ta med seg noko anna.</p>
 
 </div>
 
-<div id="jonas">
+<div class="jonasclass">
 <h4>Visevert</h4>
 <p>Jonas Neset Gjøen, lillebroren til Nora, har påtatt seg å vere visevert for kvelden. Han kan kontaktast på mobil 467 74 884. 
 Han vil gjerne at du melder frå i god tid før bryllaupet om du vil halde tale eller ha andre innslag. 
@@ -507,25 +561,42 @@ Me ynskjer at talane varer i høgst fem minuttar så middagen ikkje drar ut for 
 <p>Me ynskjer at de går i det dykk føler dykk komfortabel med. Om det er dress eller smoking, lang eller knekort kjole. Me sett pris på om de unngår kvit kjole.  </p>
 </div>
 
-
-
-
-
 </div>
-
+<div class="styledcontainer">
+<a href="#program"><input class="favorite styled"
+       type="button"
+                           value="&ltrif; Program"></a>
+<a href="#onsker"><input class="favorite styled"
+       type="button"
+                           value="Ynskjeliste 	&rtrif;"></a>
+</div>
 <div id="space3"></div>
 
 
 <div id="onsker"><h1 style="padding: 65px;">         Ynskjeliste</h1>
-
+<div style="background: rgba(100,0,200,0.1);
+		border-radius: 15px;
+	box-shadow: 3px 3px 4px 4px rgba(100,0,150,0.2); margin-bottom:20px;">
 <p>Me har ei ynskjeliste <a href="https://www.gavelisten.no/list/WZF9F4R/guest">her</a>. Det er ikkje noko spesiell rekkjefylgje, sjølv om 
-må vedgå at me draumar om ei bryllaupsreise. Dersom du likevel ynskjer å gi oss ei fysisk gåve blir me ikkje fornærma om du gløymer innpakninga. Då sparar me både tid og miljø. </p>
+må vedgå at me draumar om ei bryllaupsreise. <br><br>
 
+Dersom du likevel ynskjer å gi oss ei fysisk gåve blir me ikkje fornærma om du gløymer innpakninga. Då sparar me både tid og miljø. </p><br>
+</div>
+<div class="styledcontainer">
+<a href="#praktisk"><input class="favorite styled"
+       type="button"
+                           value="&ltrif; Praktisk"></a>
+<a href="#hashtag"><input class="favorite styled"
+       type="button"
+                           value="Takk 	&rtrif;"></a>
+</div>
 <div id="space4"></div>
 
 
 <div id="hashtag"><h1 style="padding: 65px;">         Takk!</h1>
-
+<div style="background: rgba(100,0,200,0.1);
+		border-radius: 15px;
+	box-shadow: 3px 3px 4px 4px rgba(100,0,150,0.2); margin-bottom:20px;">
 <p>Det er mykje som skal på plass til eit bryllaup. Me er veldig takknemlege for at me har fått hjelp til både det eine og det andre. Blant anna vil vi takke</p>
 <ul>
 <li>Beate som har sydd og tilpassa brudekjolane våre</li>
@@ -540,10 +611,20 @@ må vedgå at me draumar om ei bryllaupsreise. Dersom du likevel ynskjer å gi o
 <li>Mariann og Helene D som lagar bryllaupskake</li>
 <li>Sandvikenspelarar som serverer maten</li>
 <li>Og alle andre som også bidrar med stort og smått</li>
-
-
-<div id="space4"></div>
-
+<br><br>
+</div>
+<div class="styledcontainer">
+<a href="#onsker"><input class="favorite styled"
+       type="button"
+                           value="&ltrif; Ynskjeliste"></a>
+<a href="#footer"><input class="favorite styled"
+       type="button"
+                           value="Kontakt 	&rtrif;"></a>
+</div>
+<br>
+<br>
+<br>
+<br>
 <a href="#logo"><img src="logo.png" alt="" id="logo"/></a>
 <div id="footer"/>
 <p><strong>Kontaktinformasjon:</strong></p>
