@@ -1,0 +1,416 @@
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("July 20, 2019 13:00:00").getTime();
+// Update the count down every 1 second
+var x = setInterval(function() {
+  // Get todays date and time
+  var now = new Date().getTime();
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  // Display the result in the element with id="demo2"
+  document.getElementById("demo2").innerHTML = days + " dagar, " + hours + " timar, "
+  + minutes + " minutt og " + seconds + " sekund igjen";
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo2").innerHTML = "Endelig!";
+  }
+}, 1000);
+</script>
+
+
+
+<style>
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: rgba(100,0,200,0.2);
+}
+
+.lyslilla {
+	background: rgba(100,0,200,0.15);
+}
+
+.lilla {
+	background: rgba(100,0,200,0.2);
+}
+
+.lilla2 {
+	background: rgba(100,0,200,0.25);
+}
+.makshoyde {
+	max-height: 40%;
+}
+
+
+h5 {
+	font-color: rgba(100,0,100,1);
+	color: rgba(100,0,100,1);
+}
+
+h4 {
+	font-color: rgba(100,0,100,1);
+	color: rgba(100,0,100,1);
+}
+
+.carousel-inner > .item > img{
+margin:auto;
+}
+
+.carousel-inner > .item > img{
+margin:auto;
+width:100%
+}
+
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+
+
+
+</style>
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-expand-sm navbar-light fixed-top">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#section1">Heim</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#section2">Program</a>
+    <li class="nav-item dropdown">
+      <a class="nav-link " href="#section3" id="navbardrop">
+        Praktisk
+      </a>
+      <!--div class="dropdown-menu">
+        <a class="dropdown-item" href="#section41">Kyrkja</a>
+        <a class="dropdown-item" href="#section42">Overnatting</a>
+		<a class="dropdown-item" href="#section43">Transport og parkering</a>
+		<a class="dropdown-item" href="#section44">Fotografering</a>
+		<a class="dropdown-item" href="#section45">Middag og servering</a>
+		<a class="dropdown-item" href="#section46">Visevert og musikk</a>
+		<a class="dropdown-item" href="#section47">Antrekk</a>
+      </div-->
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link " href="#section4" id="navbardrop" >
+        Takk
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+
+<div id="section1x" class="container-fluid lilla2 text-center" style="padding-top:70px;padding-bottom:10px">
+  <!--h1 class="text-center">Bov</h1>-->
+  <p id="demo2"  style="font-size:15x; margin: auto; align: center; text-align: center;"></p>
+
+   <!--img class="d-block mx-auto" src="logo.png"--> 
+
+</div>
+
+
+
+
+<div id="demo" class="carousel slide" data-ride="carousel" style="margin: 10;">
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+	<li data-target="#demo" data-slide-to="3"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="nm14.jpg" class="d-block mx-auto lyslilla rounded" style="height: auto; max-height: 60vh;margin: auto;"  alt="Los Angeles" >
+    </div>
+    <div class="carousel-item">
+      <img src="nm6.jpg" class="d-block mx-auto lyslilla rounded"  style="height: auto; max-height: 60vh;margin: auto;"  alt="Chicago">
+    </div>
+    <div class="carousel-item">
+      <img src="nm10.jpg" class="d-block mx-auto lyslilla rounded"  style="height: auto; max-height: 60vh;margin: auto;"  alt="New York" >
+    </div>
+	    <div class="carousel-item">
+      <img src="nm37c.jpg" class="d-block mx-auto lyslilla rounded"  style="height: auto; max-height: 60vh;margin: auto;"  alt="New York" >
+    </div>
+	
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+<div id="section1" class="container-fluid lilla2 text-center" style="padding-top:50px;padding-bottom:50px">
+  <p class="text-center">Me ynskjer velkomen til bryllaup 20. juli 2019</p>
+  <img class="d-block mx-auto" src="logo.png"> 
+</div>
+
+<div id="section2" class="container-fluid lilla" style="padding-top:70px;padding-bottom:70px">
+
+  
+<div class="container mt-5 mb-5">
+	<div class="row">
+		<div class="col-md-6 offset-md-3">
+			<h1>Program</h1>
+			<ul class="timeline">
+				<li>
+					<p>13:00</p>
+					<h5>Vigsle</h5>
+					<p>Bremnes kyrkje</p>
+				</li>
+				<li>
+					<p>13:50</p>
+					<h5>Felles fotografering</h5>
+					<p>Etter vigsla vil me ha felles fotografering på kyrkjetrappa. Me ynskjer også å ta eit fellesbilete av alle bryllaupsgjestane utanfor kyrkja.</p>
+				</li>		
+				<li>
+					<p>14:30</p>
+					<h5>Transport til Rubbhallen</h5>
+					<p>Det er ein køyretur på omlag 10 minutt frå kyrkja til Rubbhallen.</p>
+				</li>
+				<li>
+					<p>14:45</p>
+					<h5>Velkomstdrink og snacks</h5>
+					<p>Lokalet vil opne etter vigsla for dei som kjem direkte frå kyrkja. Det vert servert velkomstdrink og enkel snacks. Brudeparet skal fotograferast etter kyrkja, og kjem til lokalet litt før middag.</p>
+				</li>			
+				<li>
+					<p>16:00</p>
+					<h5>Middag</h5>
+					<p>Lasse frå Bømlo hotell står for forrett og hovudrett. Desserten er heimelaga.</p>
+				</li>		
+				<li>
+					<p>20:30</p>
+					<h5>Kaffi</h5>
+					<p>Om alt går etter planen er me klar for kaffi og kaker omtrent klokka 20.30.</p>
+				</li>						
+				<li>
+					<p>00:00</p>
+					<h5>Nattmat og fest</h5>
+					<p>Alt skal ligge til rette for ein lang kveld. Det blir pølser for dei som vil ha påfyll.</p>
+					<p>Me vonar folk dansar og har det kjekt til det er tomt for både kaker, snacks og drikke. Bømlo hotell ligg berre ein spasertur unna.</p>
+				</li>						
+			
+			
+			</ul>
+		</div>
+	</div>
+</div>
+  
+  
+</div>
+
+<div id="demo33" class="carousel slide" data-ride="carousel" style="margin: 10;">
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo33" data-slide-to="0" class="active"></li>
+    <li data-target="#demo33" data-slide-to="1"></li>
+    <li data-target="#demo33" data-slide-to="2"></li>
+	<li data-target="#demo33" data-slide-to="3"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="nm8.jpg" class="d-block mx-auto lyslilla rounded" style="height: auto; max-height: 60vh;margin: auto;"  alt="Los Angeles" >
+    </div>
+    <div class="carousel-item">
+      <img src="nm11.jpg" class="d-block mx-auto lyslilla rounded"  style="height: auto; max-height: 60vh;margin: auto;"  alt="Chicago">
+    </div>
+    <div class="carousel-item">
+      <img src="nm12.jpg" class="d-block mx-auto lyslilla rounded"  style="height: auto; max-height: 60vh;margin: auto;"  alt="New York" >
+    </div>
+	    <div class="carousel-item">
+      <img src="nm13.jpg" class="d-block mx-auto lyslilla rounded"  style="height: auto; max-height: 60vh;margin: auto;"  alt="New York" >
+    </div>
+	
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo33" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo33" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+
+
+
+<div id="section3" class="container-fluid lilla2" style="padding-top:70px;padding-bottom:70px; margin: auto;">
+
+<div class="flex-wrap d-flex justify-content-center ">
+<h1 style="padding-top:10px;padding-bottom:30px">Praktisk informasjon</h1>
+</div>
+<div class="flex-wrap d-flex justify-content-center ">
+
+ <div class="p-3 align-self-center align-content-center" style="width:300px">
+ <h4>Kyrkja</h4>
+ <p>Vigsla er i Bremnes kyrkje (ikkje Bømlo kyrkje). <a href="https://goo.gl/maps/286qVq3wgSR2">Her finn du køyreforklaring.</a></p>
+ </div>
+ 
+<div class="p-3 align-self-center align-content-center" style="width:300px">
+ <h4>Overnatting</h4>
+ <p>Dei som tek del i felles reservasjon kan få dobbeltrom på Bømlo hotell for 990 kroner. Me ber om at de som treng hotellrom svarar på <a href="https://forms.gle/cSDo4hZGvqK6ZFZR6">dette skjema</a> innan 15. juni.
+	Kokken Lasse har lovet sein frukost for bryllaupsgjestane søndag.</p>
+	</div>
+
+<div class="p-3 align-self-center align-content-center" style="width:300px"><h4>Transport</h4><p>Me reknar med at dei fleste enten køyrer eller tek båt. Til dei av dykk som tek båt og ikkje får ordna med transport til/frå kyrkja; gi beskjed til oss, så skal me ordne dette.</p></div>
+<div class="p-3 align-self-center align-content-center" style="width:500px"><h4>Parkering</h4><p>Det er god plass til parkering ved kyrkja. Heilt inne på plassen er reservert handikappa, men under 50 meter frå er det eit parkeringshus.
+</p><p>
+Det er og stor parkeringsplass ved Rubbhallen, til dei som vil parkere der. Elles så er det gangavstand til hotellet for de som overnattar der, og ynskjer å la bilen står der.</p></div>
+<div class="p-3 align-self-center align-content-center" style="width:500px"><h4>Fotografering</h4><p>Me kjem til å ha fotograf med oss frå vigsla og til omlag etter middagen. Me vil gjerne ta eit fellesbilete utanfor kyrkja. I kyrkja ynskjer me at det berre er fotografen som tek bilete, då det blir finast bilete om alle er til stades og ikkje berre mobilane/kamera. 
+</p><p>
+Utover kvelden vil det sjølvsagt vere lov å ta bilete, men bilda til fotografen vil bli finast dersom ein ser ansikta til folk og ikkje berre kamera/mobilar. Alle vil få tilgang på alle bileta fotografen tek.</p></div>
+<div class="p-3 align-self-center align-content-center" style="width:400px"><h4>Middag</h4><p>Det vil bli servert ein tre retters middag. Til forrett vert det salat med rista kamskjel, vinaigrette og sylta raudløk. 
+Til hovudrett vert det nøttesteik servert med fløytegratinerte poteter, breserte rosenkål og rotmos med eplebitar. Til dessert vert det heimelaga sjokolademousse med bringebær.</p><p>Dersom det er nokon som har allergiar vil me gjerne at de melde frå i god tid slik at dei som skal lage middagen kan få beskjed.</p></div>
+<div class="p-3 align-self-center align-content-center" style="width:400px"><h4>Alkoholservering</h4><p>DTil maten vert det servert musserande vin til forrett og raudvin til hovudrett. Men me vil ikkje tvinge folk til å drikke noko dei ikkje liker, så det vert fri tilgang på øl, brus og vin heile kvelden, eller til det går tomt. Foreldra til Marte, Svein og Linda, stiller med likør og konjakk til kaffien. 
+</p><p>
+Me vonar at alle finn noko dei likar, om ikkje er det fritt fram å ta med seg noko anna.</p></div>
+
+
+<div class="p-3 align-self-center align-content-center" style="width:300px"><h4>Visevert</h4><p>Jonas, lillebroren til Nora, har påtatt seg å vere visevert for kvelden. Han kan kontaktast på mobil 467 74 884. Han vil gjerne at du melder frå i god tid før bryllaupet om du vil halde tale eller ha andre innslag. Me ynskjer at talane varer i høgst fem minuttar så middagen ikkje drar ut for lenge.</p></div>
+
+<div class="p-3 align-self-center align-content-center" style="width:300px"><h4>Musikk</h4><p>Nora sin far kjem til å spele musikk i bryllaupet. Om du vil bidra med noko musikalsk kan du gjerne kontakte han for å samkøyre. Mobilnummeret er 906 16 076.</p></div>
+
+<div class="p-3 align-self-center align-content-center" style="width:300px"><h4>Antrekk</h4><p>Me ynskjer at de går i det dykk føler dykk komfortabel med. Om det er smoking eller dress, lang eller knekort kjole.</p></div>
+
+
+
+
+</div>
+ 
+</div>
+
+<div id="demo3" class="carousel slide" data-ride="carousel" style="margin: 10;">
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo3" data-slide-to="0" class="active"></li>
+    <li data-target="#demo3" data-slide-to="1"></li>
+    <li data-target="#demo3" data-slide-to="2"></li>
+	<li data-target="#demo3" data-slide-to="3"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="nm4.jpg" class="d-block mx-auto lyslilla rounded" style="height: auto; max-height: 60vh;margin: auto;"  alt="Los Angeles" >
+    </div>
+    <div class="carousel-item">
+      <img src="nm5.jpg" class="d-block mx-auto lyslilla rounded"  style="height: auto; max-height: 60vh;margin: auto;"  alt="Chicago">
+    </div>
+    <div class="carousel-item">
+      <img src="nm37b.jpg" class="d-block mx-auto lyslilla rounded"  style="height: auto; max-height: 60vh;margin: auto;"  alt="New York" >
+    </div>
+	    <div class="carousel-item">
+      <img src="nm7.jpg" class="d-block mx-auto lyslilla rounded"  style="height: auto; max-height: 60vh;margin: auto;"  alt="New York" >
+    </div>
+	
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo3" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo3" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+
+
+<div id="section4" class="container-fluid lyslilla" style="padding-top:70px;padding-bottom:70px">
+<div class="flex-wrap d-flex justify-content-center ">
+<div class="p-3 align-self-center align-content-center" style="width:700px">
+<h1>Takk!</h1>
+<p>
+Det er mykje som skal på plass til eit bryllaup. Me er veldig takknemlege for at me har fått hjelp til både det eine og det andre. Blant anna vil me takke
+<br><br>
+Beate Marie som har sydd og tilpassa brudekjolane våre<br>
+Våre forlovarar; Lovise for Marte, og Erle og Pernille for Nora<br>
+Tante Monica og onkel Jesper for lån av rorbu<br>
+Jonas som er toastmaster<br>
+Ståle som er sjåfør<br>
+Lene som har ansvar for gåvebordet<br>
+Øyvind som er nattmatsjef<br>
+Erlend som er musikant på festen<br>
+Linda og Svein som byr på konjakk og likør til kaffien<br>
+Sandvikenspelarar som serverer maten<br>
+Kimberly for lån av stoltrekk<br>
+Og alle andre som også bidrar med stort og smått<br>
+
+</p>
+</div>
+</div>
+</div>
+
+<div id="section4" class="container-fluid lyslilla" style="padding-top:70px;padding-bottom:70px">
+<div class="flex-wrap d-flex justify-content-center ">
+<div class="p-3 align-self-center align-content-center" style="width:700px">
+<h1>Denne heimesida er designa av Nora Neset Gjøen.</h1>
+</div>
+</div>
+</div>
+
+</body>
+</html>
